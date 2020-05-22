@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F185B2424774DF300E118AD /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F185B2324774DF300E118AD /* Point.swift */; };
+		6F185B262477512300E118AD /* AXElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F185B252477512300E118AD /* AXElement.swift */; };
 		6F360A58247619B3001D382E /* WindowBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F360A57247619B3001D382E /* WindowBounds.swift */; };
 		6F6AF1152475A78300138ED8 /* Resolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6AF1142475A78300138ED8 /* Resolution.swift */; };
 		6FB3A88C24744E3A002DAE0A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB3A88B24744E3A002DAE0A /* main.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F185B2324774DF300E118AD /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		6F185B252477512300E118AD /* AXElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXElement.swift; sourceTree = "<group>"; };
 		6F360A57247619B3001D382E /* WindowBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowBounds.swift; sourceTree = "<group>"; };
 		6F6AF1142475A78300138ED8 /* Resolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolution.swift; sourceTree = "<group>"; };
 		6FB3A88824744E3A002DAE0A /* iwm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iwm; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +71,8 @@
 				6FB3A89224756B08002DAE0A /* WindowInfo.swift */,
 				6F6AF1142475A78300138ED8 /* Resolution.swift */,
 				6F360A57247619B3001D382E /* WindowBounds.swift */,
+				6F185B2324774DF300E118AD /* Point.swift */,
+				6F185B252477512300E118AD /* AXElement.swift */,
 			);
 			path = iwm;
 			sourceTree = "<group>";
@@ -130,7 +136,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F360A58247619B3001D382E /* WindowBounds.swift in Sources */,
+				6F185B2424774DF300E118AD /* Point.swift in Sources */,
 				6F6AF1152475A78300138ED8 /* Resolution.swift in Sources */,
+				6F185B262477512300E118AD /* AXElement.swift in Sources */,
 				6FB3A88C24744E3A002DAE0A /* main.swift in Sources */,
 				6FB3A89324756B08002DAE0A /* WindowInfo.swift in Sources */,
 			);

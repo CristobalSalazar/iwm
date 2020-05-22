@@ -33,10 +33,9 @@ extension WindowInfo {
     }
     
     // Expensive
-    static func getWindowInfo() -> [WindowInfo] {
+    static func getWindowInfoList() -> [WindowInfo] {
         var list: [WindowInfo] = []
         if let info = CGWindowListCopyWindowInfo(.optionOnScreenOnly, kCGNullWindowID) as? [[ String : Any]] {
-            // Would return CFArray of CFWindowInfo objects
             for dict in info {
                 dict.forEach { (key, val) in
                     list.append(WindowInfo(dict: dict));

@@ -1,13 +1,15 @@
-import Foundation
 import AppKit
 
-let windowInfo = WindowInfo.getWindowInfo();
-let ownerBlacklist = ["Window Server", "Dock", "SystemUIServer", "Spotlight"]
-let windows = windowInfo.filter
-{
-    if let ownerName = $0.ownerName {
-        return !ownerBlacklist.contains(ownerName)
-    } else {
-        return false;
+let workspace = NSWorkspace.shared
+let apps = workspace.runningApplications;
+
+print("Process trusted: \(AXIsProcessTrusted())")
+
+for app in apps {
+    let el = AXElement(pid: app.processIdentifier)
+    if (el.hasMainWindow()) {
+        print(el.getActionNames())
     }
+
 }
+
